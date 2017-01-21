@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FV_MainDlg</class>
+ <widget class="QDialog" name="FV_MainDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>268</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="totalBtn">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>总电流阀值设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="outputBtn">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>110</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单元电流阀值设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quitBtn">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>190</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退      出</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>outputBtn</tabstop>
+  <tabstop>totalBtn</tabstop>
+  <tabstop>quitBtn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quitBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>FV_MainDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>161</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
